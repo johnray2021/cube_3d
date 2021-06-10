@@ -1,0 +1,317 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>cube_3d</title>
+	<link rel="stylesheet" type="text/css" href="cube_3d.css">
+	<script charset="utf-8" src="cube_3d.js"></script>
+    <script type="text/javascript" src="kociemba.js"></script>
+</head>
+
+<body>
+	<div id="body_subarea_1">这是一个魔方3D模型的测试页面</div>
+	<div id="body_subarea_2">
+		<div id="cube_3d">
+			<div id="square_center" class="square">
+				<div id="square_center_top" class="top"></div>
+				<div id="square_center_bottom" class="bottom"></div>
+				<div id="square_center_front" class="front"></div>
+				<div id="square_center_back" class="back"></div>
+				<div id="square_center_left" class="left"></div>
+				<div id="square_center_right" class="right"></div>
+			</div>
+			<div id="square_U" class="square">
+				<div id="square_U_top" class="top">上5</div>
+				<div id="square_U_bottom" class="bottom"></div>
+				<div id="square_U_front" class="front"></div>
+				<div id="square_U_back" class="back"></div>
+				<div id="square_U_left" class="left"></div>
+				<div id="square_U_right" class="right"></div>
+			</div>
+			<div id="square_D" class="square">
+				<div id="square_D_top" class="top"></div>
+				<div id="square_D_bottom" class="bottom">下5</div>
+				<div id="square_D_front" class="front"></div>
+				<div id="square_D_back" class="back"></div>
+				<div id="square_D_left" class="left"></div>
+				<div id="square_D_right" class="right"></div>
+			</div>
+			<div id="square_F" class="square">
+				<div id="square_F_top" class="top"></div>
+				<div id="square_F_bottom" class="bottom"></div>
+				<div id="square_F_front" class="front">前5</div>
+				<div id="square_F_back" class="back"></div>
+				<div id="square_F_left" class="left"></div>
+				<div id="square_F_right" class="right"></div>
+			</div>
+			<div id="square_B" class="square">
+				<div id="square_B_top" class="top"></div>
+				<div id="square_B_bottom" class="bottom"></div>
+				<div id="square_B_front" class="front"></div>
+				<div id="square_B_back" class="back">后5</div>
+				<div id="square_B_left" class="left"></div>
+				<div id="square_B_right" class="right"></div>
+			</div>
+			<div id="square_L" class="square">
+				<div id="square_L_top" class="top"></div>
+				<div id="square_L_bottom" class="bottom"></div>
+				<div id="square_L_front" class="front"></div>
+				<div id="square_L_back" class="back"></div>
+				<div id="square_L_left" class="left">左5</div>
+				<div id="square_L_right" class="right"></div>
+			</div>
+			<div id="square_R" class="square">
+				<div id="square_R_top" class="top"></div>
+				<div id="square_R_bottom" class="bottom"></div>
+				<div id="square_R_front" class="front"></div>
+				<div id="square_R_back" class="back"></div>
+				<div id="square_R_left" class="left"></div>
+				<div id="square_R_right" class="right">右5</div>
+			</div>
+			<div id="square_UF" class="square">
+				<div id="square_UF_top" class="top">上8</div>
+				<div id="square_UF_bottom" class="bottom"></div>
+				<div id="square_UF_front" class="front">前2</div>
+				<div id="square_UF_back" class="back"></div>
+				<div id="square_UF_left" class="left"></div>
+				<div id="square_UF_right" class="right"></div>
+			</div>
+			<div id="square_UB" class="square">
+				<div id="square_UB_top" class="top">上2</div>
+				<div id="square_UB_bottom" class="bottom"></div>
+				<div id="square_UB_front" class="front"></div>
+				<div id="square_UB_back" class="back">后2</div>
+				<div id="square_UB_left" class="left"></div>
+				<div id="square_UB_right" class="right"></div>
+			</div>
+			<div id="square_UL" class="square">
+				<div id="square_UL_top" class="top">上4</div>
+				<div id="square_UL_bottom" class="bottom"></div>
+				<div id="square_UL_front" class="front"></div>
+				<div id="square_UL_back" class="back"></div>
+				<div id="square_UL_left" class="left">左2</div>
+				<div id="square_UL_right" class="right"></div>
+			</div>
+			<div id="square_UR" class="square">
+				<div id="square_UR_top" class="top">上6</div>
+				<div id="square_UR_bottom" class="bottom"></div>
+				<div id="square_UR_front" class="front"></div>
+				<div id="square_UR_back" class="back"></div>
+				<div id="square_UR_left" class="left"></div>
+				<div id="square_UR_right" class="right">右2</div>
+			</div>
+			<div id="square_FL" class="square">
+				<div id="square_FL_top" class="top"></div>
+				<div id="square_FL_bottom" class="bottom"></div>
+				<div id="square_FL_front" class="front">前4</div>
+				<div id="square_FL_back" class="back"></div>
+				<div id="square_FL_left" class="left">左6</div>
+				<div id="square_FL_right" class="right"></div>
+			</div>
+			<div id="square_FR" class="square">
+				<div id="square_FR_top" class="top"></div>
+				<div id="square_FR_bottom" class="bottom"></div>
+				<div id="square_FR_front" class="front">前6</div>
+				<div id="square_FR_back" class="back"></div>
+				<div id="square_FR_left" class="left"></div>
+				<div id="square_FR_right" class="right">右4</div>
+			</div>
+			<div id="square_BL" class="square">
+				<div id="square_BL_top" class="top"></div>
+				<div id="square_BL_bottom" class="bottom"></div>
+				<div id="square_BL_front" class="front"></div>
+				<div id="square_BL_back" class="back">后6</div>
+				<div id="square_BL_left" class="left">左4</div>
+				<div id="square_BL_right" class="right"></div>
+			</div>
+			<div id="square_BR" class="square">
+				<div id="square_BR_top" class="top"></div>
+				<div id="square_BR_bottom" class="bottom"></div>
+				<div id="square_BR_front" class="front"></div>
+				<div id="square_BR_back" class="back">后4</div>
+				<div id="square_BR_left" class="left"></div>
+				<div id="square_BR_right" class="right">右6</div>
+			</div>
+			<div id="square_DF" class="square">
+				<div id="square_DF_top" class="top"></div>
+				<div id="square_DF_bottom" class="bottom">下2</div>
+				<div id="square_DF_front" class="front">前8</div>
+				<div id="square_DF_back" class="back"></div>
+				<div id="square_DF_left" class="left"></div>
+				<div id="square_DF_right" class="right"></div>
+			</div>
+			<div id="square_DB" class="square">
+				<div id="square_DB_top" class="top"></div>
+				<div id="square_DB_bottom" class="bottom">下8</div>
+				<div id="square_DB_front" class="front"></div>
+				<div id="square_DB_back" class="back">后8</div>
+				<div id="square_DB_left" class="left"></div>
+				<div id="square_DB_right" class="right"></div>
+			</div>
+			<div id="square_DL" class="square">
+				<div id="square_DL_top" class="top"></div>
+				<div id="square_DL_bottom" class="bottom">下4</div>
+				<div id="square_DL_front" class="front"></div>
+				<div id="square_DL_back" class="back"></div>
+				<div id="square_DL_left" class="left">左8</div>
+				<div id="square_DL_right" class="right"></div>
+			</div>
+			<div id="square_DR" class="square">
+				<div id="square_DR_top" class="top"></div>
+				<div id="square_DR_bottom" class="bottom">下6</div>
+				<div id="square_DR_front" class="front"></div>
+				<div id="square_DR_back" class="back"></div>
+				<div id="square_DR_left" class="left"></div>
+				<div id="square_DR_right" class="right">右8</div>
+			</div>
+			<div id="square_UFL" class="square">
+				<div id="square_UFL_top" class="top">上7</div>
+				<div id="square_UFL_bottom" class="bottom"></div>
+				<div id="square_UFL_front" class="front">前1</div>
+				<div id="square_UFL_back" class="back"></div>
+				<div id="square_UFL_left" class="left">左3</div>
+				<div id="square_UFL_right" class="right"></div>
+			</div>
+			<div id="square_UFR" class="square">
+				<div id="square_UFR_top" class="top">上9</div>
+				<div id="square_UFR_bottom" class="bottom"></div>
+				<div id="square_UFR_front" class="front">前3</div>
+				<div id="square_UFR_back" class="back"></div>
+				<div id="square_UFR_left" class="left"></div>
+				<div id="square_UFR_right" class="right">右1</div>
+			</div>
+			<div id="square_UBL" class="square">
+				<div id="square_UBL_top" class="top">上1</div>
+				<div id="square_UBL_bottom" class="bottom"></div>
+				<div id="square_UBL_front" class="front"></div>
+				<div id="square_UBL_back" class="back">后3</div>
+				<div id="square_UBL_left" class="left">左1</div>
+				<div id="square_UBL_right" class="right"></div>
+			</div>
+			<div id="square_UBR" class="square">
+				<div id="square_UBR_top" class="top">上3</div>
+				<div id="square_UBR_bottom" class="bottom"></div>
+				<div id="square_UBR_front" class="front"></div>
+				<div id="square_UBR_back" class="back">后1</div>
+				<div id="square_UBR_left" class="left"></div>
+				<div id="square_UBR_right" class="right">右3</div>
+			</div>
+			<div id="square_DFL" class="square">
+				<div id="square_DFL_top" class="top"></div>
+				<div id="square_DFL_bottom" class="bottom">下1</div>
+				<div id="square_DFL_front" class="front">前7</div>
+				<div id="square_DFL_back" class="back"></div>
+				<div id="square_DFL_left" class="left">左9</div>
+				<div id="square_DFL_right" class="right"></div>
+			</div>
+			<div id="square_DFR" class="square">
+				<div id="square_DFR_top" class="top"></div>
+				<div id="square_DFR_bottom" class="bottom">下3</div>
+				<div id="square_DFR_front" class="front">前9</div>
+				<div id="square_DFR_back" class="back"></div>
+				<div id="square_DFR_left" class="left"></div>
+				<div id="square_DFR_right" class="right">右7</div>
+			</div>
+			<div id="square_DBL" class="square">
+				<div id="square_DBL_top" class="top"></div>
+				<div id="square_DBL_bottom" class="bottom">下7</div>
+				<div id="square_DBL_front" class="front"></div>
+				<div id="square_DBL_back" class="back">后9</div>
+				<div id="square_DBL_left" class="left">左7</div>
+				<div id="square_DBL_right" class="right"></div>
+			</div>
+			<div id="square_DBR" class="square">
+				<div id="square_DBR_top" class="top"></div>
+				<div id="square_DBR_bottom" class="bottom">下9</div>
+				<div id="square_DBR_front" class="front"></div>
+				<div id="square_DBR_back" class="back">后7</div>
+				<div id="square_DBR_left" class="left"></div>
+				<div id="square_DBR_right" class="right">右9</div>
+			</div>
+		</div>
+		<div id="cube_option">
+			1、魔方的颜色组成说明</br>
+			<div class="split_line"></br></div>
+			（1）魔方各面的颜色为：上黄(Y)、下白(W)、前蓝(B)、后绿(G)、左橙(O)、右红(R)。（一些魔方的底面颜色是黑色，为了图形显示美观，这里将底面设置为白色）</br>
+			（2）魔方的表面由26个块组成，包括：6个面中心块，12个边中块和8个角块。</br>
+			（3）魔方状态字符串说明：</br>
+<textarea disabled rows="10" cols="55">
+分别使用 U、D、F、B、L、R 标记 上、下、前、后、左、右 6个面。每个面的每个方块标记如下：
+             |************|
+             |*U1**U2**U3*|
+             |************|
+             |*U4**U5**U6*|
+             |************|
+             |*U7**U8**U9*|
+             |************|
+ ************|************|************|************
+ *L1**L2**L3*|*F1**F2**F3*|*R1**R2**R3*|*B1**B2**B3*
+ ************|************|************|************
+ *L4**L5**L6*|*F4**F5**F6*|*R4**R5**R6*|*B4**B5**B6*
+ ************|************|************|************
+ *L7**L8**L9*|*F7**F8**F9*|*R7**R8**R9*|*B7**B8**B9*
+ ************|************|************|************
+             |************|
+             |*D1**D2**D3*|
+             |************|
+             |*D4**D5**D6*|
+             |************|
+             |*D7**D8**D9*|
+             |************|
+按照 U、R、F、D、L、B 6个面的顺序和每个面的排列序号，读取54个方块的颜色简写字符，即为魔方的状态字符串。
+例如，一个初始化的魔方状态字符串为：YYYYYYYYYRRRRRRRRRBBBBBBBBBWWWWWWWWWOOOOOOOOOGGGGGGGGG。
+</textarea></br>
+
+			</br>
+			2.运行魔方翻转动画</br>
+			<div class="split_line"></div>
+			<input type="submit" id="submit_rotate_cube" value="运行魔方翻转动画" onclick="fun_rotate_cube()">
+			<input type="submit" id="submit_stop_rotate_cube" value="停止魔方翻转动画" onclick="fun_stop_rotate_cube()"></br>
+			</br>
+			3.执行魔方面变换</br>
+			<div class="split_line"></div>
+			变换操作说明：U-旋转顶面，D-旋转底面，F-旋转正前面，B-旋转背面，L-旋转左侧面，R-旋转右侧面。</br>
+			请输入需要执行的变换操作：</br>
+			<input type="text" id="text_transform_string" value="">
+			<input type="submit" id="submit_execute_transform" value="执行变换操作" onclick="fun_execute_transform()"></br>
+			</br>
+			<!--
+			4.执行魔方整体旋转</br>
+			<div class="split_line"></div>
+			<div>
+				<div>
+					<input type="submit" id="submit_cube_rotatex" value="(1)以x+为正面轴心，顺时针旋转90°" onclick="fun_cube_rotatex()"></br>
+					<input type="submit" id="submit_cube_rotatey" value="(2)以y+为正面轴心，顺时针旋转90°" onclick="fun_cube_rotatey()"></br>
+					<input type="submit" id="submit_cube_rotatez" value="(3)以z+为正面轴心，顺时针旋转90°" onclick="fun_cube_rotatez()"></br>
+				</div>
+				<div id="coordinate_sys">
+					<div id="axis_x">—————>x+</div>
+					<div id="axis_y">—————>y+</div>
+					<div id="axis_z">—————>z+</div>
+				</div>
+			</div>
+			</br>
+			-->
+			4.从当前图形状态还原魔方</br>
+			<div class="split_line"></div>
+			<input type="submit" id="submit_get_current_graphic_state" value="生成当前魔方状态字符串：" onclick="fun_get_current_graphic_state()">
+			<input type="text" id="text_current_graphic_state" value=""></br>
+			还原步骤：<input type="text" id="text_resolve_from_graphic_step" value="">
+			<input type="submit" id="submit_resolve_from_graphic" value="从当前图形状态执行还原操作" onclick="fun_resolve_from_graphic()"></br>
+			</br>
+			5.根据魔方状态字符串还原魔方</br>
+			<div class="split_line"></div>
+			请输入魔方的状态字符串：<input type="text" id="text_cube_state_string" value="">
+			<input type="submit" id="submit_transform_to_input_state" value="变换至输入状态" onclick="fun_transform_to_input_state()"></br>
+			还原步骤：<input type="text" id="text_resolve_step_string" value="">
+			<input type="submit" id="submit_resolve_from_input_state" value="从状态字符串执行还原操作" onclick="fun_resolve_from_input_state()"></br>
+			</br>
+			6.初始化魔方状态</br>
+			<div class="split_line"></div>
+			<input type="submit" id="submit_init_cube" value="初始化魔方状态" onclick="fun_init()"></br>
+			</br>
+		</div>
+	</div>
+	<script type="text/javascript">fun_init();</script>	
+</body>
+</html>
+
